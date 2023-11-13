@@ -27,6 +27,7 @@ import {
   puertomadero,
   spaceplush,
   selfDrivingCar,
+  myPortfolio,
   bialetti,
   threejs,
 } from "../assets";
@@ -381,9 +382,54 @@ const projects = [
     source_code_link: "https://github.com/MathiasMendozaVargas/SelfDrivingCar",
   },
   {
+    name: "My Portfolio",
+    description:
+      "Interactive portfolio with React, Three.js, and Framer Motion for a dynamic user experience. Explore my work with smooth animations and 3D elements. Powered by Vite and Tailwind CSS for fast, stylish development. Make it yours and deploy effortlessly.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "text-green-600",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-500",
+      },
+      {
+        name: "framermotion",
+        color: "text-purple-500",
+      },
+      {
+        name: "threejs",
+        color: "text-yellow-500",
+      },
+      {
+        name: "postgress",
+        color: "text-green-600",
+      },
+      {
+        name: "mysql",
+        color: "text-purple-600",
+      },
+      {
+        name: "toastifyjs",
+        color: "text-blue-600",
+      },
+    ],
+    image: myPortfolio,
+    source_code_link: "https://github.com/MathiasMendozaVargas/MyPortfolio",
+  },
+  {
     name: "Bialetti Coffee Shop",
     description:
-      "Using JavaScript, HTML5, CSS3, and Bootstrap 5, the site aims to boost the franchise's presence. Key features include a commercial showcase, external stock management, and a robust delivery system. The project is under active development, welcoming collaboration for a successful launch in Bolivia.",
+      "JavaScript, HTML5, CSS3, and Bootstrap 5 power this site, enhancing the franchise's visibility. Key features include a commercial showcase, external stock management, and a robust delivery system. Actively developed, we welcome collaboration for a successful Bolivia launch.",
     tags: [
       {
         name: "html",

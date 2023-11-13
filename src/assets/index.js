@@ -35,6 +35,7 @@ import mypurplespace from "./mypurplespace.png";
 import puertomadero from "./puertomadero.png";
 import spaceplush from "./spaceplush.png";
 import selfDrivingCar from './selfDrivingCar.png';
+import myPortfolio from './myPortfolio.png'
 import bialetti from './bialetti.png'
 
 export {
@@ -72,5 +73,6 @@ export {
   puertomadero,
   spaceplush,
   selfDrivingCar,
+  myPortfolio,
   bialetti
 };
