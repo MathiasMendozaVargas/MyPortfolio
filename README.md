@@ -1,23 +1,38 @@
-# Build and Deploy a Fantastic 3D Portfolio Website with Three.js and React.js
-![3D Portfolio](https://i.ibb.co/9ykhLtM/Thumbnail.png)
+# Portfolio Build #
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+Welcome to the repository for my cutting-edge portfolio website! This project highlights my skills and projects in a sleek and interactive manner. Feel free to explore the code and adapt it for your own portfolio.
 
-## Introduction
-The most impressive websites in the world use 3D graphics and animations to bring their content to life. Learn how to build your own ThreeJS 3D Developer Portfolio today! 
- 
-In this course, you'll learn the following:
-- ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model
-- React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React
-- TailwindCSS - a popular utility-first CSS styling framework
-- Framer Motion - the most popular library used to bring your React website to life with animations
-You'll also learn how to:
-- Load, create and customize stunning 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
-- Make your code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
-- Implement sending emails through a form on the website
-- Ensure responsiveness across all devices and improve your site's performance using Suspense and Preload.
+## Technologies Used ##
 
-## Want to land your dream programming job in 3 - 6 months?
-⭐ JSM Masterclass Experience - https://jsmastery.pro/masterclass
-Become a Software Engineer. Guaranteed.
+### - React Stack: ###
+  - React ^18.2.0
+  - React Router ^6.8.1
+  - React Tilt ^0.1.4
+  - React Toastify ^9.1.3
+  - React Typed ^1.2.0
+
+### - Animation & 3D: ###
+  - Framer Motion ^9.0.7
+  - React Three Fiber ^8.11.1
+  - Three.js ^0.149.0
+
+### - UI Enhancements: ###
+  - @EmailJS/Browser ^3.10.0
+  - @React-Vertical-Timeline-Component ^3.6.0
+
+### - Utility Libraries: ###
+  - Caniuse-lite ^1.0.30001561
+  - Maath ^0.5.2
+
+## Development Dependencies
+
+### - TypeScript: ###
+  - @Types/React ^18.0.27
+  - @Types/React-DOM ^18.0.10
+
+### - Vite & Styling: ###
+  - Vite ^4.1.0
+  - @Vitejs/Plugin-React ^3.1.0
+  - Autoprefixer ^10.4.13
+  - PostCSS ^8.4.21
+  - Tailwind CSS ^3.2.6
