@@ -449,6 +449,7 @@ const projects = [
       },
     ],
     image: bialetti,
+    live_version_link: "https://bialetti-bolivia.netlify.app/",
     source_code_link: "https://github.com/MathiasMendozaVargas/BialettiBolivia",
   },
 ];
