@@ -34,10 +34,6 @@ Check out the <a href="https://mathiasmendoza-portfolio.netlify.app/" target="_b
 
 ## 📑 Development Dependencies
 
-### - TypeScript: ###
-  - @Types/React
-  - @Types/React-DOM
-
 ### - Vite & Styling: ###
   - Vite
   - @Vitejs/Plugin-React
