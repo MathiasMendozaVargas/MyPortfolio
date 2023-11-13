@@ -1,4 +1,4 @@
-# Portfolio Build #
+# Mathias Mendoza Portfolio #
 
 Welcome to the repository for my cutting-edge portfolio website! This project highlights my skills and projects in a sleek and interactive manner. Feel free to explore the code and adapt it for your own portfolio.
 
