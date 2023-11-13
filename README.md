@@ -1,6 +1,6 @@
 # Mathias Mendoza Portfolio #
 
-<img src="https://ik.imagekit.io/r67xuhpwk/Screenshot%202023-11-13%20121816.png?updatedAt=1699906722493" width='80%'>
+<img src="https://ik.imagekit.io/r67xuhpwk/Screenshot%202023-11-13%20121816.png?updatedAt=1699906722493" width='100%'>
 
 Welcome to the repository for my cutting-edge portfolio website! This project highlights my skills and projects in a sleek and interactive manner. Feel free to explore the code and adapt it for your own portfolio.
 
