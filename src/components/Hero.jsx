@@ -1,31 +1,64 @@
 import { motion } from "framer-motion";
-
+import Typed from 'react-typed';
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+
+  const floatVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: [0, -10, 0], // Float up and down
+      opacity: 1,
+      transition: {
+        y: {
+          duration: 1.8,
+          yoyo: Infinity, // Makes the animation repeat indefinitely
+          ease: 'easeInOut', // You can change the easing function
+        },
+        opacity: { duration: 1.5 },
+      },
+    },
+  };
+
+  
+  const typedOptions = {
+    strings: ['Mathias'],
+    typeSpeed: 120,
+    startDelay: 4,
+    backSpeed: 140,
+  };
+
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto z-10`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-5 h-5 rounded-full bg-[#ff0132]' />
+          <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-red-500 to-red-800' />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#ff0132]'>
+              <Typed {...typedOptions} loop/>
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
+
+          {/* Floating Animation for p */}
+          <motion.p
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+            variants={floatVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            whileInView="visible" // Add whileHover to keep the animation going
+          >
+            I'm a Full Stack Web Developer, <br className='sm:block hidden' />
+            living in Vancouver.
+          </motion.p>
         </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

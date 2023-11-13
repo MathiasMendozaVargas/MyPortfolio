@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
+        <ToastContainer></ToastContainer>
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

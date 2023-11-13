@@ -5,6 +5,8 @@ import {
   web,
   javascript,
   typescript,
+  csharp,
+  python,
   html,
   css,
   reactjs,
@@ -12,16 +14,20 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  supabase,
+  jackpoole,
+  bradon,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  rona,
+  homedepot,
+  sczCollege,
+  puertomaderologo,
+  cornerstone,
+  mypurplespace,
+  puertomadero,
+  spaceplush,
+  selfDrivingCar,
+  bialetti,
   threejs,
 } from "../assets";
 
@@ -35,6 +41,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "technologies",
+    title: "Technologies",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,11 +56,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Fronted Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Js Developer",
     icon: mobile,
   },
   {
@@ -54,7 +68,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Data Science and Deep Learning self-student",
     icon: creator,
   },
 ];
@@ -105,66 +119,78 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "supabase",
+    icon: supabase,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "c#",
+    icon: csharp,
+  },
+  {
+    name: "python3",
+    icon: python,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Full Stack Web and Mobile Development Course",
+    company_name: "Community College - Santa Cruz, Bolivia",
+    icon: sczCollege,
+    iconBg: "#036838",
+    date: "January 2019 - March 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Studied web and mobile development concepts, including HTML, CSS, JavaScript, and mobile app development.",
+      "Worked with various programming languages and frameworks, such as React, React Native, and Node.js.",
+      "Developed and deployed web and mobile applications for practical experience.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Frontend Web and Flutter App Developer",
+    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
+    icon: puertomaderologo,
+    iconBg: "#071b43",
+    date: "September 2020 - July 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
+      "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
+      "Collaborated on optimizing app performance and enhancing user experience.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Full Stack Web Development Co-op Course",
+    company_name: "Cornerstone College - Vancouver, Canada",
+    icon: cornerstone,
+    iconBg: "#283b8a",
+    date: "August 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated in a rigorous co-op program with a focus on full-stack web development.",
+      "Gained expertise in both frontend and backend technologies, including React, Node.js, and databases.",
+      "Contributed to real-world projects, practicing software engineering best practices.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Part-time Sales Associate",
+    company_name: "The Home Depot - Richmond, Canada",
+    icon: homedepot,
+    iconBg: "#f96302",
+    date: "January 2023 - August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted customers with technical product inquiries and provided expert guidance.",
+      "Operated point-of-sale systems efficiently and ensured accurate transactions.",
+      "Collaborated with colleagues to maintain the store's technology-related inventory.",
+    ],
+  },
+  {
+    title: "Part-time Sales Associate",
+    company_name: "Rona - Coquitlam, Canada",
+    icon: rona,
+    iconBg: "#012f5c",
+    date: "August 2023 - Present",
+    points: [
+      "Provided technical expertise to customers on home renovation and construction products.",
+      "Offered detailed product specifications and recommendations for various projects.",
+      "Assisted in managing inventory, including tracking and restocking technical merchandise.",
     ],
   },
 ];
@@ -172,93 +198,212 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Thanks to our new Management System developed by Mathias our sales and company have been skyrocketing, amazing work.",
+    name: "Erick Castro",
+    designation: "CEO",
+    company: "Puerto Madero",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've never met a web developer who truly cares about his career and programming like Mathias does.",
+    name: "Jack Poole",
+    designation: "Student",
+    company: "Computer Science",
+    image: jackpoole,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After having worked with Mathias, I realized he's a very determined person, who will always give his best and make an excellent job.",
+    name: "Bradon McInnes",
+    designation: "HR",
+    company: "Home Depot Richmond",
+    image: bradon,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My Purple Space",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Social Networking App that allow users to create their profiles, add friends, see other people's profiles, share photos, post comments, like or dislike posts. User have total control over their profile and the content they share.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "supabase",
+        color: "text-green-600",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "typescript",
+        color: "text-blue-500",
+      },
+      {
+        name: "framermotion",
+        color: "text-purple-500",
+      },
+      {
+        name: "threejs",
+        color: "text-yellow-500",
+      },
+      {
+        name: "postgress",
+        color: "text-green-600",
+      },
+      {
+        name: "mysql",
+        color: "text-purple-600",
+      },
+      {
+        name: "toastifyjs",
+        color: "text-blue-600",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: mypurplespace,
+    live_version_link: "https://mypurplespace.netlify.app/",
+    source_code_link: "https://github.com/MathiasMendozaVargas/MyPurpleSpaceNetwork",
   },
   {
-    name: "Job IT",
+    name: "Puerto Madero Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Management System App built for Puerto Madero, a real estate company located in Bolivia. It allows employees inside the company to have their accounts, schedule viewings, manage company business and share photos and information valuable that could be useful for other employees such as photos, ads media, etc.",
     tags: [
       {
-        name: "react",
+        name: "html5",
         color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "text-green-600",
+      },
+      {
+        name: "express",
+        color: "text-purple-500",
+      },
+      {
+        name: "nodejs",
+        color: "text-green-500",
+      },
+      {
+        name: "javascript",
+        color: "text-yellow-500",
       },
       {
         name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "css3",
+        color: "text-pink-500",
+      },
+      {
+        name: "mysql",
+        color: "text-purple-600",
+      },
+      {
+        name: "toastifyjs",
+        color: "text-blue-600",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: puertomadero,
+    source_code_link: "https://github.com/MathiasMendozaVargas/puertomaderomanagementsystem",
   },
   {
-    name: "Trip Guide",
+    name: "Spaceplus",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "React Js app connected to NASA's media API, it allows users to browse for anything related to space, such as: Planets, Stars, Rockets, Companies, etc. It has a beautiful and simple user interface.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "restApi",
         color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "nasa-api",
+        color: "text-blue-600",
+      },
+      {
+        name: "react-hooks",
+        color: "text-purple-600",
+      },
+      {
+        name: "axios",
+        color: "text-gray-400",
+      },
+      {
+        name: "javascript",
+        color: "text-yellow-500",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: spaceplush,
+    source_code_link: "https://github.com/MathiasMendozaVargas/Spaceplush",
+  },
+  {
+    name: "Self Driving Car",
+    description:
+      "Exciting Python-based implementation of a self-driving car simulation leveraging the power of Deep Q Learning (DQN) neural networks. Imagine a virtual world where our intelligent car not only roams autonomously but learns from its experiences to become an adept driver!",
+    tags: [
+      {
+        name: "python3",
+        color: "text-green-500",
+      },
+      {
+        name: "pytorch",
+        color: "text-orange-500",
+      },
+      {
+        name: "deeplearning",
+        color: "text-blue-600",
+      },
+      {
+        name: "tcl-tk",
+        color: "text-yellow-500",
+      },
+      {
+        name: "reinforcement-learning",
+        color: "text-blue-600",
+      },
+    ],
+    image: selfDrivingCar,
+    source_code_link: "https://github.com/MathiasMendozaVargas/SelfDrivingCar",
+  },
+  {
+    name: "Bialetti Coffee Shop",
+    description:
+      "Using JavaScript, HTML5, CSS3, and Bootstrap 5, the site aims to boost the franchise's presence. Key features include a commercial showcase, external stock management, and a robust delivery system. The project is under active development, welcoming collaboration for a successful launch in Bolivia.",
+    tags: [
+      {
+        name: "html",
+        color: "text-blue-500",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bootstrap5",
+        color: "text-purple-500",
+      },
+      {
+        name: "javascript",
+        color: "text-yellow-500",
+      },
+    ],
+    image: bialetti,
+    source_code_link: "https://github.com/MathiasMendozaVargas/BialettiBolivia",
   },
 ];
 

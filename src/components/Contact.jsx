@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,21 +34,23 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_7rb9r0f',
+        'template_cx32dol',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mathias Mendoza",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "mathiasmendozavargas1403@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'c5tnB7-nD2iCPLYlS'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thank you. I will get back to you as soon as possible.", {
+            position: toast.POSITION.TOP_RIGHT
+          })
 
           setForm({
             name: "",
@@ -58,16 +61,19 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          toast.success("Ahh, something went wrong. Please try again.", {
+            position: toast.POSITION.TOP_RIGHT
+          })
         }
       );
   };
 
   return (
+    
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+      
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -129,7 +135,9 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      
     </div>
+    
   );
 };
 
