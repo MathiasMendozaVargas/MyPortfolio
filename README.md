@@ -4,7 +4,11 @@
 
 Welcome to the repository for my cutting-edge portfolio website! This project highlights my skills and projects in a sleek and interactive manner. Feel free to explore the code and adapt it for your own portfolio.
 
-## Technologies Used ##
+## Live Demo 🌐
+
+Check out the <a href="https://mathiasmendoza-portfolio.netlify.app/" target="_blank">live demo</a>.
+
+## 🛠️ Technologies Used ##
 
 ### - React Stack: ###
   - React
@@ -28,7 +32,7 @@ Welcome to the repository for my cutting-edge portfolio website! This project hi
 
 <img src="https://ik.imagekit.io/r67xuhpwk/myPortfolio.png?updatedAt=1699917306529" width='100%'>
 
-## Development Dependencies
+## 📑 Development Dependencies
 
 ### - TypeScript: ###
   - @Types/React
