@@ -26,6 +26,8 @@ Welcome to the repository for my cutting-edge portfolio website! This project hi
   - Caniuse-lite
   - Maath
 
+<img src="https://ik.imagekit.io/r67xuhpwk/myPortfolio.png?updatedAt=1699917306529" width='100%'>
+
 ## Development Dependencies
 
 ### - TypeScript: ###
