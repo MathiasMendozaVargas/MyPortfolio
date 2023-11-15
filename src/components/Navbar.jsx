@@ -64,6 +64,10 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <a
                   href={`#${nav.id}`}
+                  onClick={()=>{
+                    setIsOpen(false)
+                    setScrolled(true)
+                  }}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >{nav.title}</a>
               ))}
@@ -110,6 +114,10 @@ const Navbar = () => {
             <div ref={ref} className="px-2 pt-2 pb-5 space-y-1 sm:px-">
               {navLinks.map((nav) => (
                 <a
+                  onClick={()=>{
+                    setIsOpen(false)
+                    setScrolled(true)
+                  }}
                   href={`#${nav.id}`}
                   className="hover:bg-gray-700 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >{nav.title}</a>
