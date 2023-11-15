@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+// Llibraries
+import React, { useState, useEffect } from "react";
+import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
+// assets
+import { logo, menu, close } from "../assets";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,77 +27,103 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   return (
-    <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
-    >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Mathias &nbsp;
-            <span className='lg:block hidden'> | Full Stack Web Developer</span>
-          </p>
-        </Link>
-
-        <ul className='list-none hidden lg:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+    <div>
+      <div className={`${styles.paddingX} w-full flex items-center justify-between py-5 fixed top-0 z-20 ${isOpen ? (
+        'bg-primary'
+      ) : (
+        scrolled ? (
+          'bg-primary'
+        ) : (
+          'bg-transparent'
+        )
+      )}`}>
+        <div className="w-full flex items-center justify-between">
+          <div className="flex-shrink-0">
+            <Link
+              to='/'
+              className='flex items-center gap-2'
+              onClick={() => {
+                setActive("");
+                window.scrollTo(0, 0);
+              }}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
-
-        <div className='lg:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
-
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
+              <img
+                className="h-8 w-8"
+                src={logo}
+                alt="Workflow"
+              />
+              <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+                Mathias &nbsp;
+                <span className='lg:block hidden'> | Full Stack Web Developer</span>
+              </p>
+            </Link>
           </div>
+            <div className="hidden lg:block ml-10 flex items-baseline space-x-4">
+              {navLinks.map((nav) => (
+                <a
+                  href={`#${nav.id}`}
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >{nav.title}</a>
+              ))}
+              <a
+                href='https://www.dropbox.com/scl/fi/og4qsvgczwo7e6xicw4bf/MathiasMendozaResume.pdf?rlkey=xcwb089v9cxywfqgfyqucatjz&dl=0'
+                target="_blank"
+                className="text-gray-200 bg-gray-700 hover:text-white hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium"
+              >Resume <i class="fa-regular fa-paper-plane ml-1"></i></a>
+            </div>
+        </div>
+        <div className="-mr-2 flex lg:hidden">
+          <button
+            onClick={() => {
+              setIsOpen(!isOpen)
+              setScrolled(!scrolled)
+            }}
+            type="button"
+            className="inline-flex items-center justify-center p-2 rounded-md hover:text-white focus:outline-none"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <img
+              src={isOpen ? close : menu}
+              alt='menu'
+              className='w-[28px] h-[28px] object-contain'
+              onClick={() => setToggle(!isOpen)}
+          />
+          </button>
         </div>
       </div>
-    </nav>
+
+      <Transition
+        className='w-full fixed top-20 z-20 bg-primary'
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div className="lg:hidden border-b-2 rounded-b-xl border-white" id="mobile-menu">
+            <div ref={ref} className="px-2 pt-2 pb-5 space-y-1 sm:px-">
+              {navLinks.map((nav) => (
+                <a
+                  href={`#${nav.id}`}
+                  className="hover:bg-gray-700 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >{nav.title}</a>
+              ))}
+              <a
+                href='https://www.dropbox.com/scl/fi/og4qsvgczwo7e6xicw4bf/MathiasMendozaResume.pdf?rlkey=xcwb089v9cxywfqgfyqucatjz&dl=0'
+                target="_blank"
+                className="bg-gray-700 w-fit m-auto text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Resume <i class="fa-regular fa-paper-plane ml-1"></i></a>
+            </div>
+          </div>
+        )}
+      </Transition>
+    </div>
   );
 };
 
