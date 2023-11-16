@@ -242,8 +242,8 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "typescript",
-        color: "text-blue-500",
+        name: "javascript",
+        color: "text-yellow-500",
       },
       {
         name: "framermotion",
