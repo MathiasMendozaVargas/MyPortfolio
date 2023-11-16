@@ -82,7 +82,11 @@ const Navbar = () => {
           <button
             onClick={() => {
               setIsOpen(!isOpen)
-              setScrolled(!scrolled)
+              if(isOpen){
+                setScrolled(false)
+              }else{
+                setScrolled(true)
+              }
             }}
             type="button"
             className="inline-flex items-center justify-center p-2 rounded-md hover:text-white focus:outline-none"
@@ -93,7 +97,6 @@ const Navbar = () => {
               src={isOpen ? close : menu}
               alt='menu'
               className='w-[28px] h-[28px] object-contain'
-              onClick={() => setToggle(!isOpen)}
           />
           </button>
         </div>
