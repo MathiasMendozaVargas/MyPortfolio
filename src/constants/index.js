@@ -196,6 +196,69 @@ const experiences = [
   },
 ];
 
+const educations = [
+  {
+    title: "Full Stack Web and Mobile Development Course",
+    company_name: "Community College - Santa Cruz, Bolivia",
+    icon: sczCollege,
+    iconBg: "#036838",
+    date: "January 2019 - March 2020",
+    points: [
+      "Studied web and mobile development concepts, including HTML, CSS, JavaScript, and mobile app development.",
+      "Worked with various programming languages and frameworks, such as React, React Native, and Node.js.",
+      "Developed and deployed web and mobile applications for practical experience.",
+    ],
+  },
+  {
+    title: "Frontend Web and Flutter App Developer",
+    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
+    icon: puertomaderologo,
+    iconBg: "#071b43",
+    date: "September 2020 - July 2022",
+    points: [
+      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
+      "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
+      "Collaborated on optimizing app performance and enhancing user experience.",
+    ],
+  },
+  {
+    title: "Full Stack Web Development Co-op Course",
+    company_name: "Cornerstone College - Vancouver, Canada",
+    icon: cornerstone,
+    iconBg: "#283b8a",
+    date: "August 2022 - Present",
+    points: [
+      "Participated in a rigorous co-op program with a focus on full-stack web development.",
+      "Gained expertise in both frontend and backend technologies, including React, Node.js, and databases.",
+      "Contributed to real-world projects, practicing software engineering best practices.",
+    ],
+  },
+  {
+    title: "Part-time Sales Associate",
+    company_name: "The Home Depot - Richmond, Canada",
+    icon: homedepot,
+    iconBg: "#f96302",
+    date: "January 2023 - August 2023",
+    points: [
+      "Assisted customers with technical product inquiries and provided expert guidance.",
+      "Operated point-of-sale systems efficiently and ensured accurate transactions.",
+      "Collaborated with colleagues to maintain the store's technology-related inventory.",
+    ],
+  },
+  {
+    title: "Part-time Sales Associate",
+    company_name: "Rona - Coquitlam, Canada",
+    icon: rona,
+    iconBg: "#012f5c",
+    date: "August 2023 - Present",
+    points: [
+      "Provided technical expertise to customers on home renovation and construction products.",
+      "Offered detailed product specifications and recommendations for various projects.",
+      "Assisted in managing inventory, including tracking and restocking technical merchandise.",
+    ],
+  },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -454,4 +517,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, educations, testimonials, projects };
