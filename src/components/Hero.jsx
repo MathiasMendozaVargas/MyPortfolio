@@ -55,7 +55,8 @@ const Hero = () => {
             whileInView="visible" // Add whileHover to keep the animation going
           >
             I'm a Full Stack Web Developer, <br className='sm:block hidden' />
-            living in Vancouver.
+            very passionate coder, always looking<br className='sm:block hidden' />
+            to expand my knoledge!
           </motion.p>
         </div>
       </div>
