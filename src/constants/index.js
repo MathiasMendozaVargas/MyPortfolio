@@ -22,6 +22,8 @@ import {
   homedepot,
   sczCollege,
   puertomaderologo,
+  bluespace,
+  fiverr,
   cornerstone,
   mypurplespace,
   puertomadero,
@@ -135,51 +137,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Web and Mobile Development Course",
-    company_name: "Community College - Santa Cruz, Bolivia",
-    icon: sczCollege,
-    iconBg: "#036838",
-    date: "January 2019 - March 2020",
+    title: "Frontend Web Developer",
+    company_name: "BlueSpace.Ai",
+    icon: bluespace,
+    iconBg: "#ffff",
+    date: "August 2023 - Present",
     points: [
-      "Studied web and mobile development concepts, including HTML, CSS, JavaScript, and mobile app development.",
-      "Worked with various programming languages and frameworks, such as React, React Native, and Node.js.",
-      "Developed and deployed web and mobile applications for practical experience.",
-    ],
-  },
-  {
-    title: "Frontend Web and Flutter App Developer",
-    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
-    icon: puertomaderologo,
-    iconBg: "#071b43",
-    date: "September 2020 - July 2022",
-    points: [
-      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
+      "Implemented complex user interfaces using advanced ReactJs, NextJs, Python, TailwindCss, Typescript, etc.",
       "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
       "Collaborated on optimizing app performance and enhancing user experience.",
     ],
   },
   {
-    title: "Full Stack Web Development Co-op Course",
-    company_name: "Cornerstone College - Vancouver, Canada",
-    icon: cornerstone,
-    iconBg: "#283b8a",
-    date: "August 2022 - Present",
+    title: "Freelance Full Stack Web Developer",
+    company_name: "Fiverr",
+    icon: fiverr,
+    iconBg: "#00b34f",
+    date: "September 2023 - Present",
     points: [
-      "Participated in a rigorous co-op program with a focus on full-stack web development.",
-      "Gained expertise in both frontend and backend technologies, including React, Node.js, and databases.",
-      "Contributed to real-world projects, practicing software engineering best practices.",
-    ],
-  },
-  {
-    title: "Part-time Sales Associate",
-    company_name: "The Home Depot - Richmond, Canada",
-    icon: homedepot,
-    iconBg: "#f96302",
-    date: "January 2023 - August 2023",
-    points: [
-      "Assisted customers with technical product inquiries and provided expert guidance.",
-      "Operated point-of-sale systems efficiently and ensured accurate transactions.",
-      "Collaborated with colleagues to maintain the store's technology-related inventory.",
+      "Creating Web Apps in HTML, CSS, JavaScript, React, NodeJs, NextJs, and Python, Django, Flask for comprehensive web development.",
+      "Designing responsive interfaces with Bootstrap, Tailwind, and React for seamless cross-device compatibility.",
+      "Expert in relational (PostgreSQL, MySQL) and NoSQL (MongoDB) databases for efficient data management.",
     ],
   },
   {
@@ -192,36 +170,24 @@ const experiences = [
       "Provided technical expertise to customers on home renovation and construction products.",
       "Offered detailed product specifications and recommendations for various projects.",
       "Assisted in managing inventory, including tracking and restocking technical merchandise.",
+    ],
+  },
+  {
+    title: "Frontend Web and Flutter App Developer",
+    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
+    icon: puertomaderologo,
+    iconBg: "#071b43",
+    date: "September 2020 - July 2022",
+    points: [
+      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
+      "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
+      "Collaborated on optimizing app performance and enhancing user experience.",
     ],
   },
 ];
 
 const educations = [
   {
-    title: "Full Stack Web and Mobile Development Course",
-    company_name: "Community College - Santa Cruz, Bolivia",
-    icon: sczCollege,
-    iconBg: "#036838",
-    date: "January 2019 - March 2020",
-    points: [
-      "Studied web and mobile development concepts, including HTML, CSS, JavaScript, and mobile app development.",
-      "Worked with various programming languages and frameworks, such as React, React Native, and Node.js.",
-      "Developed and deployed web and mobile applications for practical experience.",
-    ],
-  },
-  {
-    title: "Frontend Web and Flutter App Developer",
-    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
-    icon: puertomaderologo,
-    iconBg: "#071b43",
-    date: "September 2020 - July 2022",
-    points: [
-      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
-      "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
-      "Collaborated on optimizing app performance and enhancing user experience.",
-    ],
-  },
-  {
     title: "Full Stack Web Development Co-op Course",
     company_name: "Cornerstone College - Vancouver, Canada",
     icon: cornerstone,
@@ -234,29 +200,18 @@ const educations = [
     ],
   },
   {
-    title: "Part-time Sales Associate",
-    company_name: "The Home Depot - Richmond, Canada",
-    icon: homedepot,
-    iconBg: "#f96302",
-    date: "January 2023 - August 2023",
+    title: "Full Stack Web and Mobile Development Course",
+    company_name: "Community College - Santa Cruz, Bolivia",
+    icon: sczCollege,
+    iconBg: "#036838",
+    date: "January 2019 - March 2020",
     points: [
-      "Assisted customers with technical product inquiries and provided expert guidance.",
-      "Operated point-of-sale systems efficiently and ensured accurate transactions.",
-      "Collaborated with colleagues to maintain the store's technology-related inventory.",
+      "Studied web and mobile development concepts, including HTML, CSS, JavaScript, and mobile app development.",
+      "Worked with various programming languages and frameworks, such as React, React Native, and Node.js.",
+      "Developed and deployed web and mobile applications for practical experience.",
     ],
   },
-  {
-    title: "Part-time Sales Associate",
-    company_name: "Rona - Coquitlam, Canada",
-    icon: rona,
-    iconBg: "#012f5c",
-    date: "August 2023 - Present",
-    points: [
-      "Provided technical expertise to customers on home renovation and construction products.",
-      "Offered detailed product specifications and recommendations for various projects.",
-      "Assisted in managing inventory, including tracking and restocking technical merchandise.",
-    ],
-  },
+  
 ];
 
 const testimonials = [

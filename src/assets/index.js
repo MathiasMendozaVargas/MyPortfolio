@@ -30,6 +30,8 @@ import rona from "./company/rona.png";
 import cornerstone from "./company/cornerstone.png";
 import sczCollege from "./company/sczCollege.png";
 import puertomaderologo from "./company/puertomadero.jpg";
+import bluespace from './company/bluespace.png';
+import fiverr from './company/fiverr.png'
 
 import mypurplespace from "./mypurplespace.png";
 import puertomadero from "./puertomadero.png";
@@ -69,6 +71,8 @@ export {
   cornerstone,
   sczCollege,
   puertomaderologo,
+  bluespace,
+  fiverr,
   mypurplespace,
   puertomadero,
   spaceplush,
