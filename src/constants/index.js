@@ -138,7 +138,7 @@ const technologies = [
 const experiences = [
   {
     title: "Frontend Web Developer",
-    company_name: "BlueSpace.Ai",
+    company_name: "BlueSpace.Ai - San Francisco",
     icon: bluespace,
     iconBg: "#ffff",
     date: "August 2023 - Present",
@@ -162,7 +162,7 @@ const experiences = [
   },
   {
     title: "Part-time Sales Associate",
-    company_name: "Rona - Coquitlam, Canada",
+    company_name: "Rona - Vancouver, Canada",
     icon: rona,
     iconBg: "#012f5c",
     date: "August 2023 - Present",
