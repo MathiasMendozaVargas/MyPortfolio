@@ -26,6 +26,7 @@ import {
   fiverr,
   cornerstone,
   mypurplespace,
+  multicenter,
   puertomadero,
   spaceplush,
   selfDrivingCar,
@@ -173,7 +174,19 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Web and Flutter App Developer",
+    title: "Full Stack Flutter App Developer",
+    company_name: "MultiCenter - Santa Cruz, Bolivia",
+    icon: multicenter,
+    iconBg: "#ffd300",
+    date: "August 2022 - January 2024",
+    points: [
+      "Proficient in Flutter framework, with hands-on experience in building cross-platform mobile applications for both iOS and Android platforms.",
+      "Strong understanding of backend development, including RESTful APIs, databases (e.g., Firebase, SQLite), and server-side scripting (e.g., Node.js, Django).",
+      "Skilled in front-end development with expertise in UI/UX design principles, responsive layout, and state management using Flutter widgets and libraries.",
+    ],
+  },
+  {
+    title: "Full Stack Web Developer (Frontend Focus)",
     company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
     icon: puertomaderologo,
     iconBg: "#071b43",
