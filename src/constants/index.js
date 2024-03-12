@@ -16,6 +16,7 @@ import {
   mongodb,
   supabase,
   jackpoole,
+  erickcastro,
   bradon,
   git,
   rona,
@@ -25,6 +26,7 @@ import {
   bluespace,
   fiverr,
   cornerstone,
+  electrisearch,
   mypurplespace,
   multicenter,
   puertomadero,
@@ -181,7 +183,7 @@ const experiences = [
     date: "August 2022 - January 2024",
     points: [
       "Proficient in Flutter framework, with hands-on experience in building cross-platform mobile applications for both iOS and Android platforms.",
-      "Strong understanding of backend development, including RESTful APIs, databases (e.g., Firebase, SQLite), and server-side scripting (e.g., Node.js, Django).",
+      "Strong understanding of backend development, including RESTful APIs, databases (Firebase, SQLite), and server-side scripting (Node.js, Django).",
       "Skilled in front-end development with expertise in UI/UX design principles, responsive layout, and state management using Flutter widgets and libraries.",
     ],
   },
@@ -234,7 +236,7 @@ const testimonials = [
     name: "Erick Castro",
     designation: "CEO",
     company: "Puerto Madero",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: erickcastro,
   },
   {
     testimonial:
@@ -255,6 +257,52 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "ElectriSearch",
+    description:
+      "Explore the world with ElectriSearch, your go-to for finding electric charging stations globally. Join our community to support clean energy, contribute to the charging network, and connect with eco-conscious users.",
+    tags: [
+      {
+        name: "nextjs14",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "text-green-600",
+      },
+      {
+        name: "tailwindCss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-600",
+      },
+      {
+        name: "framermotion",
+        color: "text-purple-500",
+      },
+      {
+        name: "googlemapsApi",
+        color: "text-yellow-500",
+      },
+      {
+        name: "postgress",
+        color: "text-green-600",
+      },
+      {
+        name: "mysql",
+        color: "text-purple-600",
+      },
+      {
+        name: "toastifyjs",
+        color: "text-blue-600",
+      },
+    ],
+    image: electrisearch,
+    live_version_link: "https://mypurplespace.netlify.app/",
+    source_code_link: "https://github.com/MathiasMendozaVargas/MyPurpleSpaceNetwork",
+  },
   {
     name: "My Purple Space",
     description:

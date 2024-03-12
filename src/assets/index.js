@@ -8,6 +8,7 @@ import live_version from './live_version.png'
 import menu from "./menu.svg";
 import close from "./close.svg";
 import jackpoole from './jackpoole.jpeg'
+import erickcastro from './erickcastro.jpg'
 import bradon from './bradon.jpg'
 
 import css from "./tech/css.png";
@@ -34,6 +35,7 @@ import puertomaderologo from "./company/puertomadero.jpg";
 import bluespace from './company/bluespace.png';
 import fiverr from './company/fiverr.png'
 
+import electrisearch from './electrisearch.png'
 import mypurplespace from "./mypurplespace.png";
 import puertomadero from "./puertomadero.png";
 import spaceplush from "./spaceplush.png";
@@ -52,6 +54,7 @@ export {
   menu,
   close,
   jackpoole,
+  erickcastro,
   bradon,
   css,
   git,
@@ -75,6 +78,7 @@ export {
   puertomaderologo,
   bluespace,
   fiverr,
+  electrisearch,
   mypurplespace,
   puertomadero,
   spaceplush,
