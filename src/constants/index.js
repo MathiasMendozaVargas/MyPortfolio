@@ -300,7 +300,6 @@ const projects = [
       },
     ],
     image: electrisearch,
-    live_version_link: "https://mypurplespace.netlify.app/",
     source_code_link: "https://github.com/MathiasMendozaVargas/MyPurpleSpaceNetwork",
   },
   {
