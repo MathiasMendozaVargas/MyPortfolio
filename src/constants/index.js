@@ -140,8 +140,8 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Web Developer",
-    company_name: "BlueSpace.Ai - San Francisco",
+    title: "Frontend Web Developer Intern",
+    company_name: "BlueSpace.Ai - Remote in Vancouver, BC",
     icon: bluespace,
     iconBg: "#ffff",
     date: "August 2023 - Present",
@@ -152,51 +152,28 @@ const experiences = [
     ],
   },
   {
-    title: "Freelance Full Stack Web Developer",
-    company_name: "Fiverr",
-    icon: fiverr,
-    iconBg: "#00b34f",
-    date: "September 2023 - Present",
-    points: [
-      "Creating Web Apps in HTML, CSS, JavaScript, React, NodeJs, NextJs, and Python, Django, Flask for comprehensive web development.",
-      "Designing responsive interfaces with Bootstrap, Tailwind, and React for seamless cross-device compatibility.",
-      "Expert in relational (PostgreSQL, MySQL) and NoSQL (MongoDB) databases for efficient data management.",
-    ],
-  },
-  {
-    title: "Part-time Sales Associate",
-    company_name: "Rona - Vancouver, Canada",
-    icon: rona,
-    iconBg: "#012f5c",
-    date: "August 2023 - Present",
-    points: [
-      "Provided technical expertise to customers on home renovation and construction products.",
-      "Offered detailed product specifications and recommendations for various projects.",
-      "Assisted in managing inventory, including tracking and restocking technical merchandise.",
-    ],
-  },
-  {
-    title: "Full Stack Flutter App Developer",
-    company_name: "MultiCenter - Santa Cruz, Bolivia",
-    icon: multicenter,
-    iconBg: "#ffd300",
-    date: "August 2022 - January 2024",
-    points: [
-      "Proficient in Flutter framework, with hands-on experience in building cross-platform mobile applications for both iOS and Android platforms.",
-      "Strong understanding of backend development, including RESTful APIs, databases (Firebase, SQLite), and server-side scripting (Node.js, Django).",
-      "Skilled in front-end development with expertise in UI/UX design principles, responsive layout, and state management using Flutter widgets and libraries.",
-    ],
-  },
-  {
     title: "Full Stack Web Developer (Frontend Focus)",
-    company_name: "Puerto Madero Urubo - Santa Cruz, Bolivia",
+    company_name: "Puerto Madero Urubo - Remote in Santa Cruz, Bolivia",
     icon: puertomaderologo,
     iconBg: "#071b43",
-    date: "September 2020 - July 2022",
+    date: "December 2020 - August 2023",
     points: [
-      "Implemented complex user interfaces using advanced HTML, CSS, and JavaScript techniques.",
-      "Utilized React for frontend web development and Flutter for cross-platform mobile app development.",
-      "Collaborated on optimizing app performance and enhancing user experience.",
+      "Developed and maintained RESTful APIs using Node.js and Express, ensuring secure and efficient data handling.",
+      "Implemented server-side rendering and dynamic routing using Next.js for improved SEO and performance",
+      "Integrated third-party services and APIs.",
+      "Designed and optimized database schemas with MySQL and MongoDB, focusing on scalability and data integrity."
+    ],
+  },
+  {
+    title: "Frontend Flutter App Developer Intern",
+    company_name: "MultiCenter - Hybrid in Santa Cruz, Bolivia",
+    icon: multicenter,
+    iconBg: "#ffd300",
+    date: "August 2020 - January 2021",
+    points: [
+      "Developed cross-platform mobile applications using Flutter for both iOS and Android",
+      "Integrated RESTful APIs, databases, and server-side scripting",
+      "Focused on UI/UX design, responsive layout, and state management using Flutter.",
     ],
   },
 ];
@@ -207,7 +184,7 @@ const educations = [
     company_name: "Cornerstone College - Vancouver, Canada",
     icon: cornerstone,
     iconBg: "#283b8a",
-    date: "August 2022 - Present",
+    date: "August 2022 - October 2023",
     points: [
       "Participated in a rigorous co-op program with a focus on full-stack web development.",
       "Gained expertise in both frontend and backend technologies, including React, Node.js, and databases.",
